@@ -1,0 +1,51 @@
+// Fixed Point Interation
+
+// Fixed Point Interation
+
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+
+using namespace std;
+
+float function(float x) {
+    return exp(-x);
+}
+
+int main() {
+    float num1;
+    
+    cout << "Enter a number: ";
+    cin >> num1;
+    
+        
+
+    
+    cout << endl;
+    int c;
+    float  xn,xn1,error;
+    c = 1;
+  
+
+    cout << "Iteration\txn\txn+1\tError\n";
+    
+    do {
+       xn=num1;
+       xn1=function(xn);
+       num1=xn1;
+       error = (xn1-xn) / xn1;
+        
+        if (error < 0) {
+            error = -error;
+        }
+
+        cout << fixed << setprecision(3) << c << "\t\t" << xn << "\t" << xn1 <<"\t"<< error << "\n";
+        c = c + 1;
+        
+        
+        
+    } while (error>0.05);
+
+    cout << endl << "Final output: " << fixed << setprecision(2) << xn1;
+    return 0;
+}
