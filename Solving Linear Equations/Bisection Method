@@ -12,17 +12,19 @@ float function(float x) {
 int main() {
     float num1,num2;
     do{
-        cout << "Enter a number whic will give positive output: ";
+        cout << "Enter a number which will give positive output: ";
         cin >> num1;
-        if(num1<0){
-        cout<<"Invalid Input!";}
+        if(function(num1)<0){
+        cout<<"Invalid Input!";
+        }
     }while(function(num1)<0);
         
     do{
-        cout << "Enter a number whic will give negative output: ";
+        cout << "Enter a number which will give negative output: ";
         cin >> num2;
-        if(num2>0){
-        cout<<"Invalid Input!";}
+        if(function(num2)>0){
+            cout<<"Invalid Input!";
+        }
     }while(function(num2)>0);
     
     cout << endl;
