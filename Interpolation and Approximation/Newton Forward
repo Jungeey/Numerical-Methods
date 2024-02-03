@@ -34,7 +34,6 @@ int main(){
     int counter;
     cout<<"How many points do you want to enter?";
     cin>>counter;
-    float dx[counter-1];
     float x,y,s,h;
     cout<<"Enter the value for calculation: ";
     cin>>x;
