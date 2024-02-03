@@ -5,7 +5,6 @@ using namespace std;
 void calculate(float Ynew[],int i,int counter){
     for(int k=0;k<counter-i-1;k++){
         Ynew[k]=Ynew[k+1]-Ynew[k];
-        cout<<Ynew[k]<<", ";
     }
     cout<<endl;
 }
