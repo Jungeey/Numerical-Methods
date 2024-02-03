@@ -1,5 +1,6 @@
 //Forward
 #include<iostream>
+//#include<cmath>
 using namespace std;
 void calculate(float Ynew[],int i,int counter){
     for(int k=0;k<counter-i-1;k++){
@@ -16,6 +17,7 @@ float Hero(float s,int i){
     }else{
         float x=(s-i-1)*Hero(s,i-1);
         return x;
+        //return return x/tgamma(i + 1);
     }
 }
 
