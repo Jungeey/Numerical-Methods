@@ -51,7 +51,6 @@ int main(){
     for(int i=0;i<counter-1;i++){
         calculate(Ynew,i,counter);
         data[i+1]=Ynew[0];
-        cout<<data[i+1]<<endl;
     }
     
     y=formula(data,counter,s);
