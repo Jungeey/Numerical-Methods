@@ -15,9 +15,9 @@ float Hero(float s,int i){
     }else if(i==1){
         return s;
     }else{
-        //float x=(s-i-1)*Hero(s,i-1);
+        float x=(s-i+1)*Hero(s,i-1);
         //return x;
-        return return x/tgamma(i + 1);
+        return x/tgamma(i + 1);
     }
 }
 
@@ -38,7 +38,7 @@ int main(){
     cout<<"Enter the value for calculation: ";
     cin>>x;
     float X[counter],Y[counter],Ynew[counter],data[counter];
-    x=25;
+    
     for(int i=0;i<counter;i++){
         cout<<"value of x"<<i<<": ";
         cin>>X[i];
