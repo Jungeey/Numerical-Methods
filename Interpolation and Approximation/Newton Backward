@@ -45,7 +45,7 @@ int main(){
         cin>>Y[i];
         Ynew[i]=Y[i];
     }
-    h=X[0];
+    h=X[1]-X[0];
     s=(x-X[counter-1])/h;
     data[0]=Y[counter-1];
     for(int i=0;i<counter-1;i++){
