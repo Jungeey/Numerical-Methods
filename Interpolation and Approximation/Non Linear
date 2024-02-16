@@ -10,7 +10,7 @@ int main()
     int size;
     cout<<"Enter size of data";
     cin>>size;
-    int x[size],y[size],x2,xy,xtotal,ytotal;
+    float x[size],y[size],x2,xy,xtotal,ytotal;
     float b,a;
    
     for(int i=0;i<size;i++){
