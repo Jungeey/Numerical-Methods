@@ -28,7 +28,7 @@ int main()
    
     b=(float)(size*xy-xtotal*ytotal)/(size*x2-(xtotal)*(xtotal));
     a=(float)(ytotal/size)-b*(xtotal/size);
-   
+   a=exp(a);
     cout<<"y="<<a<<" + "<<b<<" * "<<"x";
     int val;
     cout<<"Enter x:";
