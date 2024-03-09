@@ -18,7 +18,7 @@ int main(){
     cin>>b;
     
     h=(b-a)/2;
-    x1=(a+b)/2;
+    x1=a+h;
     result=formula(h,a,b,x1);
     cout<<"Final output: "<<result;
     return 0;
