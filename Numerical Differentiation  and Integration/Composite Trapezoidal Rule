@@ -40,7 +40,6 @@ int main(){
         }else{
             x[i]=x[i-1]+h;
         }
-        cout<<x[i]<<" ";
     }
     
     result=formula(h,x,n);
