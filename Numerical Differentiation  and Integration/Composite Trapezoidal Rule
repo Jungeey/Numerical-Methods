@@ -1,4 +1,4 @@
-// trapezoidal rule
+// composite trapezoidal rule
 #include<iostream>
 #include<cmath>
 using namespace std;
