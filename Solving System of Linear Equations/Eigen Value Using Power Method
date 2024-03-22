@@ -4,26 +4,24 @@ using namespace std;
 
 int main(){
     int x,y;
-    // cout<<"Enter the row of matrix: ";
-    // cin>>x;
-    // cout<<"Enter the column of matrix: ";
-    // cin>>y;
-    x=3;y=3;
+    cout<<"Enter the row of matrix: ";
+    cin>>x;
+    cout<<"Enter the column of matrix: ";
+    cin>>y;
+
     float A[x][y];
     float X[x],Y[x],Xnew[x];
     X[x/2]=1;
     float stop=1;
     float k;
     float error[x];
-    A[0][0]=1 ;A[0][1]= 2;A[0][2]= 0;
-     A[1][0]=2 ;A[1][1]= 1;A[1][2]= 0;
-      A[2][0]=0 ;A[2][1]= 0;A[2][2]= -1;
-    // for(int i=0;i<x;i++){
-    //     for(int j=0;j<y;j++){
-    //         cout<<"Enter for a"<<i+1<<j+1<<" : ";
-    //         cin>>A[i][j];
-    //     }
-    // }
+
+    for(int i=0;i<x;i++){
+        for(int j=0;j<y;j++){
+            cout<<"Enter for a"<<i+1<<j+1<<" : ";
+            cin>>A[i][j];
+        }
+    }
     int c=0;
     do{
         for(int i=0;i<x;i++){
