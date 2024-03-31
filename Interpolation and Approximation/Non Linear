@@ -2,7 +2,7 @@
 #include <iostream>
 #include<cmath>
 using namespace std;
-float Calculate(float a, float b, int x){
+float Calculate(float a, float b, float x){
     return (a*exp(b*x));
 }
 int main()
@@ -31,10 +31,11 @@ int main()
     a=(float)(ytotal/size)-b*(xtotal/size);
     a=exp(a);
     cout<<"y="<<a<<" * "<<"e"<<"^"<<"("<<b<<"x)"<<endl;
-    int val;
+    float val;
     cout<<"Enter x:";
     cin>>val;
     cout<<"y= "<<Calculate(a,b,val);
 
     return 0;
 }
+
