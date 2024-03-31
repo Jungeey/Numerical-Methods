@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-float Calculate(float a, float b, int x){
+float Calculate(float a, float b, float x){
     return (a+b*x);
 }
 int main()
