@@ -26,7 +26,7 @@ int main()
     a=(float)(ytotal/size)-b*(xtotal/size);
    
     cout<<"y="<<a<<" + "<<b<<" * "<<"x";
-    int val;
+    float val;
     cout<<"Enter x:";
     cin>>val;
     cout<<"y= "<<Calculate(a,b,val);
