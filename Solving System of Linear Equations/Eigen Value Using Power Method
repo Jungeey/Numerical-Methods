@@ -30,9 +30,9 @@ int main(){
                 //cout<<Y[i]<<" + "<<A[i][j]<<" * "<<X[j]<<endl;
                 Y[i]=Y[i]+A[i][j]*X[j];
             }
-            cout<<Y[i]<<" ";
+           // cout<<Y[i]<<" ";
         }
-        cout<<endl;
+        //cout<<endl;
         
         k=Y[0];
         for(int j=0;j<x;j++){
@@ -40,13 +40,13 @@ int main(){
                 k=Y[j];
             }
         }
-        cout<<"k= "<<k;
-        cout<<endl;
+        //cout<<"k= "<<k;
+        //cout<<endl;
         for(int j=0;j<x;j++){
             Xnew[j]=Y[j]/k;
-            cout<<Xnew[j]<<" ";
+           // cout<<Xnew[j]<<" ";
         }
-        cout<<endl;
+        //cout<<endl;
         stop=1;
             for(int i=0;i<x;i++){
             if(Xnew[i]==0){
@@ -54,22 +54,24 @@ int main(){
             }else{
                 error[i]=abs((Xnew[i]-X[i])/Xnew[i]);
             }
-	        cout<<error[i]<<" ";
+	        //cout<<error[i]<<" ";
 	        if(error[i]>0.05){
 	            stop=0;
 	        }
 	        }
-           cout<<endl;
+           //cout<<endl;
             for(int j=0;j<x;j++){
                 X[j]=Xnew[j];
             }
-            cout<<endl<<endl;
+            //cout<<endl<<endl;
             c++;
             
     }while(stop!=1);
+    cout<<endl<<endl;
+    cout<<"Engin Vector = ";
     for(int j=0;j<x;j++){
         cout<<Xnew[j]<<" ";
     }
-    cout<<endl<<k;
+    cout<<endl<<"Eigen Value = "<<k;
     return 0;
 }
