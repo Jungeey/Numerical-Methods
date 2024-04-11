@@ -17,7 +17,7 @@ int main(){
 			if(j==y){
 				cout<<"Enter the value of constant : ";
 			}else{
-				cout<<"Enter the value of x"<<i+1<<" : ";
+				cout<<"Enter the value of x"<<j<<" : ";
 			}
 			cin>>A[i][j];
 		}
@@ -28,13 +28,13 @@ int main(){
 float val;
 	for(int k=0;k<x;k++){
 		//display
-		for(int i=0;i<x;i++){
-			for(int j=0;j<=y;j++){
-				cout<<A[i][j]<<"\t";
-			}
-			cout<<endl;
-		}
-		cout<<endl;
+// 		for(int i=0;i<x;i++){
+// // 			for(int j=0;j<=y;j++){
+// // 				cout<<A[i][j]<<"\t";
+// // 			}
+// // 			cout<<endl;
+// 		}
+// 		cout<<endl;
 		for(int i=0;i<x;i++){
 			if(i<k){
 				continue;
@@ -50,21 +50,21 @@ float val;
 		}
 	}
 	
-	for(int i=0;i<x;i++){
-			for(int j=0;j<=y;j++){
-				cout<<A[i][j]<<"\t";
-			}
-			cout<<endl;
-	}
+// 	for(int i=0;i<x;i++){
+// 			for(int j=0;j<=y;j++){
+// 				cout<<A[i][j]<<"\t";
+// 			}
+// 			cout<<endl;
+// 	}
 	
 	for(int i=x-1;i>=0;i--){
 	    val=A[i][x];
-	    cout<<val<<endl;
+	   // cout<<val<<endl;
 			for(int j=x-1;j>0;j--){
 				if(i==j){
 				    continue;
 				}else{
-				    cout<<val<<" - "<<A[i][j]<<" * "<<X[j]<<endl;
+				   // cout<<val<<" - "<<A[i][j]<<" * "<<X[j]<<endl;
 				    val=val-A[i][j]*X[j];
 				}
 		    }
@@ -75,7 +75,7 @@ float val;
 	
 	cout<<endl<<endl;
 	for(int i=0;i<x;i++){
-		cout<<"x"<<i+1<<" = "<<X[i]<<endl;
+		cout<<"x"<<i<<" = "<<X[i]<<endl;
 	}
 	
 	return 0;
